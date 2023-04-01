@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap");
 
 * {
   margin: 0;
@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .main {
@@ -46,6 +47,7 @@ h1 {
 }
 
 p {
+  font-family: "Open Sans", sans-serif;
   max-width: 304px;
   font-weight: 400;
   font-size: 16px;
@@ -57,6 +59,7 @@ p {
 }
 
 button {
+  font-family: "Poppins", sans-serif;
   padding: 10px 80px;
   border-radius: 20px;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
@@ -70,7 +73,6 @@ button {
 
 .social-media-logos {
   margin-top: 64px;
-  height: 13vh;
 }
 
 .social-media-logos img {
@@ -136,24 +138,20 @@ button {
   button:hover {
     background-color: #e880e8;
     color: white;
+    cursor: pointer;
   }
 
   .social-media-logos {
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translate(-88%, -135%);
   }
 
-  .facebook-icon:hover {
-    background-color: #ff52c1;
-  }
-
-  .twiter-icon:hover {
-    background-color: #ff52c1;
-  }
-
+  .facebook-icon:hover,
+  .twiter-icon:hover,
   .instagram-icon:hover {
     background-color: #ff52c1;
+    border-radius: 50px;
+    cursor: pointer;
   }
 }
